@@ -437,8 +437,8 @@ public:
         root = put( root, key, val, 0 );
     }
 
-    void deleteKey( const string& key ) const {
-        if ( contains( key ) ) --N;
+    void deleteKey( const string& key ) {
+        if ( contains( key ) ){ --N;}
         root = deleteKey( root, key, 0 );
     }
 

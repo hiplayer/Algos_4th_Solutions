@@ -251,7 +251,7 @@ private:
     }
 
     void getKeysThatMatch( Node * h, string prefix, int d, const string& pattern, queue< string >& results ) const {
-        if ( ! h ) return h;
+        if ( ! h ) return ;
 
         char c = pattern[ d ];
         if ( c == '.' || c < h->c ) {

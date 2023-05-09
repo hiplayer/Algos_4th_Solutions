@@ -642,9 +642,9 @@ public:
         return weight;
     }
 
-    queue< Edge > getEdges() const {
+    queue< Edge > getEdges()  {
         queue< Edge > q;
-        for ( unordered_set< Edge >::iterator iter = mst.begin(); iter != mst.end(); ++iter ) {
+        for (unordered_set< Edge >::iterator iter = mst.begin(); iter != mst.end(); ++iter ) {
             q.push( *iter );
         }
         return q;
